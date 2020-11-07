@@ -1,0 +1,22 @@
+{
+  "name": "input-select",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://sexyoung.github.io/input-select",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sexyoung/input-select.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sexyoung/input-select/issues"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
