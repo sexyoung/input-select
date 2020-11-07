@@ -1,0 +1,60 @@
+.input-select {
+  position: relative;
+}
+
+.input-select > span {
+  cursor: pointer;
+  padding: 4px 7px;
+  border-radius: 3px;
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #888;
+}
+
+.input-select > input[type=checkbox] {
+  display: none;
+}
+
+.input-select > input[type=checkbox]:checked ~ span {
+  color: #aaa;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.input-select > input[type=checkbox]:checked ~ .dropdown {
+  display: block;
+}
+
+.input-select > .dropdown {
+  left: 0;
+  margin: 0;
+  width: 100%;
+  display: none;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  top: calc(100% + 4px);
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #888;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.input-select > .dropdown > li {
+  padding: 5px;
+}
+
+.input-select > .dropdown > li:first-of-type input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-select > .dropdown > li:not(:last-of-type) {
+  border-bottom: 1px solid #ddd;
+}
+
+.input-select > .dropdown > li:not(:first-of-type):hover {
+  background-color: #eeee;
+  cursor: pointer;
+}
