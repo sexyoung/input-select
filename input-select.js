@@ -45,11 +45,6 @@ class InputSelect {
     /** hide all observable DOM */
     if(Object.keys(this.observable).length) {
       this.hideAllObservable(this.observable);
-
-      // Object.keys(this.observable).forEach(value => {
-      //   this.observable[value].rootDOM.style.display = 'none';
-      //   console.log(this.observable[value].observable);
-      // });
       if(this.observable[e.target.dataset.code]) {
         this.observable[e.target.dataset.code].rootDOM.removeAttribute('style');
       }
