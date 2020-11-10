@@ -90,7 +90,6 @@ class InputSelect {
     rootDOM.appendChild(this.newDOM('input', {type: 'checkbox'}));
 
     /** 插入 span */
-    console.log(this);
     const currentGameDOM = this.newDOM('span', {innerHTML: this.noValueText});
     rootDOM.appendChild(currentGameDOM);
     this.currentGameDOM = currentGameDOM;
